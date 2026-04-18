@@ -1,11 +1,15 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: npm
+    directory: /
     schedule:
-      interval: "weekly"
-      day: "sunday"
+      interval: weekly
+      day: sunday
     groups:
       all-dependencies:
         patterns:
-          - "*"
+          - '*'
+    ignore:
+      # @antfu/eslint-config@8.2.0 requires v3, waiting for antfu to support v4
+      - dependency-name: '@eslint-react/eslint-plugin'
+        update-types: ['version-update:semver-major']
