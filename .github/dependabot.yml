@@ -8,4 +8,13 @@ updates:
     schedule:
       day: sunday
       interval: weekly
+  - directory: /src-tauri
+    groups:
+      all-dependencies:
+        patterns:
+          - '*'
+    package-ecosystem: cargo
+    schedule:
+      day: sunday
+      interval: weekly
 version: 2

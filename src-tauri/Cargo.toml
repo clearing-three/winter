@@ -1,0 +1,24 @@
+[package]
+name = "winter"
+version = "0.0.0"
+authors = ["void-returned"]
+license = "MIT"
+edition = "2024"
+
+[dependencies]
+tauri = "2.10.3"
+tauri-plugin-dialog = "2.7.0"
+tauri-plugin-updater = "2.10.1"
+sqlx = { version = "0.8.6", features = ["sqlite", "runtime-tokio-rustls", "migrate"] }
+thiserror = "2.0.18"
+tokio = { version = "1.52.1", features = ["full"] }
+serde = { version = "1.0.228", features = ["derive"] }
+
+[build-dependencies]
+tauri-build = { version = "2.5.6", features = [] }
+
+[dev-dependencies]
+tauri = { version = "2.10.3", features = ["test"] }
+
+[lib]
+crate-type = ["lib", "cdylib", "staticlib"]
