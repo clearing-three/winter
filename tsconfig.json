@@ -1,27 +1,26 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "allowImportingTsExtensions": true,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "jsx": "react-jsx",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "resolveJsonModule": true,
 
-    "allowImportingTsExtensions": true,
-    "strict": true,
-    "allowUnreachableCode": false,
-    "exactOptionalPropertyTypes": true,
+    "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-
-    "noEmit": true,
-
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "skipLibCheck": true
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "verbatimModuleSyntax": true
   }
 }
