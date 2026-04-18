@@ -31,7 +31,7 @@
       "endpoints": [
         "https://github.com/clearing-three/winter/releases/latest/download/latest.json"
       ],
-      "pubkey": "PLACEHOLDER_PUBLIC_KEY_TO_BE_REPLACED_IN_STEP_6"
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDNEQTFCQzdEMEI1OEFBM0IKUldRN3FsZ0xmYnloUGRaV2h2YmZYMjNEcFFhdXlrWWo3a0EwbFpCLy83ZW1OeXF6UVB0NHUwbEkK"
     }
   },
   "productName": "Winter",
