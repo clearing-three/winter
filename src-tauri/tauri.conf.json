@@ -1,0 +1,39 @@
+{
+  "app": {
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'"
+    },
+    "windows": [
+      {
+        "height": 900,
+        "resizable": true,
+        "title": "Winter",
+        "width": 1400
+      }
+    ]
+  },
+  "build": {
+    "beforeBuildCommand": "pnpm run build",
+    "beforeDevCommand": "pnpm run dev",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "bundle": {
+    "active": true,
+    "icon": [
+      "icons/icon.png"
+    ],
+    "targets": "appimage"
+  },
+  "identifier": "io.github.clearing-three.winter",
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://github.com/clearing-three/winter/releases/latest/download/latest.json"
+      ],
+      "pubkey": "PLACEHOLDER_PUBLIC_KEY_TO_BE_REPLACED_IN_STEP_6"
+    }
+  },
+  "productName": "Winter",
+  "version": "../package.json"
+}
