@@ -1,0 +1,28 @@
+{
+  "name": "winter",
+  "version": "0.1.0",
+  "author": "void-returned",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "@tauri-apps/api": "2.10.1"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@tauri-apps/cli": "2.10.1",
+    "@vitejs/plugin-react": "6.0.1",
+    "typescript": "6.0.3",
+    "vite": "8.0.8",
+    "eslint": "10.2.1",
+    "@antfu/eslint-config": "8.2.0"
+  }
+}

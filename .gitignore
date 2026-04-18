@@ -1,0 +1,6 @@
+# Node
+node_modules/
+
+# Local planning files
+/design.md
+/plan.md
