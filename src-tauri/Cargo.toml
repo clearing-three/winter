@@ -6,19 +6,23 @@ license = "MIT"
 edition = "2024"
 
 [dependencies]
-tauri = "2.10.3"
+tauri = { version = "2.10.3", features = [] }
 tauri-plugin-dialog = "2.7.0"
 tauri-plugin-updater = "2.10.1"
-sqlx = { version = "0.8.6", features = ["sqlite", "runtime-tokio-rustls", "migrate"] }
+sqlx = { version = "0.8.6", features = ["sqlite", "runtime-tokio-rustls", "migrate", "chrono"] }
+chrono = { version = "0.4.39", features = ["serde"] }
 thiserror = "2.0.18"
 tokio = { version = "1.52.1", features = ["full"] }
 serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+
 
 [build-dependencies]
 tauri-build = { version = "2.5.6", features = [] }
 
 [dev-dependencies]
 tauri = { version = "2.10.3", features = ["test"] }
+pretty_assertions = "1.4.1"
 
 [lib]
-crate-type = ["lib", "cdylib", "staticlib"]
+crate-type = ["cdylib", "lib"]

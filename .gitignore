@@ -5,3 +5,7 @@ dist/
 # Local planning files
 /design.md
 /plan.md
+
+# Rust
+src-tauri/target/
+src-tauri/gen/
