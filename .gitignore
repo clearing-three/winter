@@ -9,3 +9,6 @@ dist/
 # Rust
 src-tauri/target/
 src-tauri/gen/
+
+# Coverage
+src-tauri/lcov.info
