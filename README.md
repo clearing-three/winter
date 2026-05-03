@@ -4,18 +4,25 @@ A personal finance application
 
 ## Development workflows
 
-- Validation
+### Complete App (Rust + React)
 
-```
-pnpm validate
-```
+#### Commands
+* full validation (formatting + linting + tests): `pnpm validate`
+* all tests: `pnpm test`
+* launch app: `tauri dev`
 
-### Test Coverage
+### Rust (backend)
+* rust tests: `pnpm test:tauri`
+* rust test coverage: `pnpm test:coverage:tauri`
+  * generated report: `./src-tauri/target/llvm-cov/html/index.html`
 
-#### Tauri
+### React (frontend)
+* Typescript tests: `pnpm test:frontend`
 
-- Run report: `pnpm test:coverage:tauri`
-  - generated report: `./src-tauri/target/llvm-cov/html/index.html`
+
+## Release workflows
+* Create distributable app: `tauri build`
+  * Creates AppImage (frontend + backend + native wrapper)
 
 ## First time setup
 
